@@ -3,59 +3,61 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Animal Card</title>
+    <title>Animal Trading Cards</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+
+  <body class="outer-container">
     <main class="page">
-      <article class="sheet" role="article" aria-label="Cheetah fact sheet">
-        <h1 class="title">Cheetah</h1>
+      <div class="container sheet">
+        <h3 class="animal-name title">Cheetah</h3>
 
-        <figure class="photo">
+        <div class="photo img-container">
           <img src="cheetah.jpg" alt="A cheetah laying down on a tree" />
-        </figure>
+        </div>
 
-        <section class="content">
-          <p class="lead">
+        <div class="text-container content">
+          <p class="fun-facts lead">
             <em>
-              Known for their jaw-dropping speed, striking coats, and unique
-              social behaviours, these cats are full of surprises, but behind
-              their beauty lies a species racing against extinction.
+              Known for their jaw-dropping speed, striking coats, and unique social
+              behaviours, cheetahs are full of surprises — but behind their beauty
+              lies a species racing against extinction.
             </em>
           </p>
 
-          <dl class="facts">
-            <div class="row">
-              <dt>Scientific Name:</dt>
-              <dd>Acinonyx jubatus</dd>
-            </div>
-            <div class="row">
-              <dt>Average Length:</dt>
-              <dd>1.1–1.5 meters (body), plus 60–80 cm tail</dd>
-            </div>
-            <div class="row">
-              <dt>Average Lifespan:</dt>
-              <dd>10–12 years (wild)</dd>
-            </div>
-            <div class="row">
-              <dt>Habitat:</dt>
-              <dd>
-                Grasslands, savannas, and open plains of Africa (small
-                population in Iran)
-              </dd>
-            </div>
-          </dl>
+          <ul class="bullets facts general-description">
+            <li>
+              <span class="highlights">Scientific Name</span>:
+              <mark>
+                <a
+                  href="https://en.wikipedia.org/wiki/Cheetah"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Acinonyx jubatus</a
+                >
+              </mark>
+            </li>
+            <li>
+              <span class="highlights">Average Length</span>: 1.1–1.5 m (body),
+              plus 60–80 cm tail
+            </li>
+            <li><span class="highlights">Average Lifespan</span>: 10–12 years (wild)</li>
+            <li>
+              <span class="highlights">Habitat</span>: Grasslands, savannas, and
+              open plains of Africa (small population in Iran)
+            </li>
+          </ul>
 
-          <p class="body">
-            Tan with distinctive black spots and dark “tear marks” running from
-            the eyes to the mouth, cheetahs are built for speed rather than
-            strength. Their slender bodies, deep chests, and long tails help
-            them balance while sprinting and making sharp turns. Unlike other
-            big cats, cheetahs rely on explosive acceleration to chase down prey
-            such as gazelles in short, high-speed bursts across open terrain.
+          <p class="general-description body">
+            Tan with distinctive black spots and dark “tear marks” running from the
+            eyes to the mouth, cheetahs are built for speed rather than strength.
+            Their slender bodies, deep chests, and long tails help them balance
+            while sprinting and making sharp turns. Unlike other big cats, cheetahs
+            rely on explosive acceleration to chase down prey in short, high-speed
+            bursts across open terrain.
           </p>
-        </section>
-      </article>
+        </div>
+      </div>
     </main>
   </body>
 </html>
