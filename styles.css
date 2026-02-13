@@ -1,35 +1,11 @@
-:root {
-  --page-bg: #000000;
-  --paper: #ffffff;
-  --ink: #111;
-  --muted: #c01818;
-  --border: #024eff;
-  --soft-border: #d7d7d7;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-
 img {
   width: 300px;
-  height: 200px; 
-
-
+  height: 200px;
 }
 
-
-body {
-  margin: 0;
-  font-family: "Times New Roman", serif;
-  color: var(--ink);
-  background: var(--page-bg);
+.img-container {
+  padding-bottom: 0.25em;
 }
-
-
-
 
 
 .outer-container {
@@ -39,41 +15,25 @@ body {
 }
 
 
-
-
-.page {
-  min-height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: start center;
-  padding: 40px 16px;
+.text-container {
+  width: 265px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(219, 6, 6);
+  padding: 1em;
 }
 
+
 .container {
+  height: auto;
   width: 300px;
   border-style: solid;
   border-width: 1px;
-  border-color: gray;
+  border-color: rgb(0, 0, 0);
   padding: 0.8em;
-  box-shadow: 5px 5px 5px lightgray;
+  box-shadow: 10px 10px 10px lightgray;
   border-radius: 20px;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  background: var(--paper);
 }
-
-
-
-
-.sheet {
-  width: 356px;
-  border: 1px solid #e6e6e6;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-  padding: 18px;
-}
-
-
-
 
 .animal-name {
   border-style: solid;
@@ -81,103 +41,18 @@ body {
   border-color: white;
 }
 
-.title {
-  margin: 0 0 14px;
-  padding: 10px 12px;
-  border: 1px solid var(--border);
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-}
 
-
-.img-container {
-  padding-bottom: 1em;
-}
-
-
-
-
-.photo {
-  margin: 0 0 14px;
-  border: 1px solid var(--border);
-  padding: 10px;
-  background: #fff;
-  border-radius: 10px;
-}
-
-.photo img {
-  display: block;
-  width: 300px;
-  height: auto; 
-}
-
-
-
-
-.text-container {
-  width: 265px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
-  padding: 1em;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
-  border-radius: 12px;
-}
-
-.content {
-  border: 1px solid var(--border);
-  padding: 14px;
-}
-
-
-
-.lead {
-  margin: 0 0 14px;
-  padding: 12px;
-  border: 1px solid var(--soft-border);
-  background: #fbfbfb;
-  line-height: 1.45;
-  text-align: center;
-  border-radius: 12px;
-}
-
-.lead em {
-  color: var(--muted);
-  font-style: italic;
-}
-
-.bullets {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.facts li {
-  padding: 6px 0;
-  border-bottom: 1px dashed #e6e6e6;
-}
-
-.facts li:last-child {
-  border-bottom: none;
-}
 
 .highlights {
-  font: bold 13pt "Times New Roman", Palatino, serif;
+  font: bold 12pt "Times New Roman", Palatino, serif;
 }
 
 .fun-facts {
-  font: italic 12pt "Times New Roman", Palatino, serif;
+  font: italic 12pt "Times New Roman", serif;
 }
 
 .general-description {
-  font: 12pt "Times New Roman", Palatino, serif;
-}
-
-.body {
-  margin: 0;
-  line-height: 1.6;
+  font: 12pt "Times New Roman", serif;
 }
 
 
