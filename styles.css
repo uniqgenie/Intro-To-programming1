@@ -11,6 +11,16 @@
   box-sizing: border-box;
 }
 
+
+
+img {
+  width: 300px;
+  height: 200px; 
+
+
+}
+
+
 body {
   margin: 0;
   font-family: "Times New Roman", serif;
@@ -18,12 +28,59 @@ body {
   background: var(--page-bg);
 }
 
+
+
+
+
+.outer-container {
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
 .page {
   min-height: 100vh;
+  width: 100%;
   display: grid;
   place-items: start center;
   padding: 40px 16px;
 }
+
+.container {
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding: 0.8em;
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 20px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  background: var(--paper);
+}
+
+
+
+
+.sheet {
+  width: 356px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 18px;
+}
+
+
+
+
+.animal-name {
+  border-style: solid;
+  border-width: 0.1em;
+  border-color: white;
+}
+
 .title {
   margin: 0 0 14px;
   padding: 10px 12px;
@@ -32,31 +89,49 @@ body {
   font-weight: 700;
   text-align: center;
 }
-.sheet {
-  width: 356px;
-  background: var(--paper);
-  border: 1px solid #e6e6e6;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-  padding: 18px;
+
+
+.img-container {
+  padding-bottom: 1em;
 }
+
+
+
 
 .photo {
   margin: 0 0 14px;
   border: 1px solid var(--border);
   padding: 10px;
   background: #fff;
+  border-radius: 10px;
 }
 
 .photo img {
   display: block;
   width: 300px;
-  height: auto;
+  height: auto; 
+}
+
+
+
+
+.text-container {
+  width: 265px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding: 1em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  border-radius: 12px;
 }
 
 .content {
   border: 1px solid var(--border);
   padding: 14px;
 }
+
+
 
 .lead {
   margin: 0 0 14px;
@@ -65,6 +140,7 @@ body {
   background: #fbfbfb;
   line-height: 1.45;
   text-align: center;
+  border-radius: 12px;
 }
 
 .lead em {
@@ -72,30 +148,31 @@ body {
   font-style: italic;
 }
 
-.facts {
-  margin: 0 0 14px;
+.bullets {
+  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
-.facts .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+.facts li {
   padding: 6px 0;
   border-bottom: 1px dashed #e6e6e6;
 }
 
-.facts .row:last-child {
+.facts li:last-child {
   border-bottom: none;
 }
 
-.facts dt {
-  font-weight: 700;
+.highlights {
+  font: bold 13pt "Times New Roman", Palatino, serif;
 }
 
-.facts dd {
-  margin: 0;
-  text-align: right;
+.fun-facts {
+  font: italic 12pt "Times New Roman", Palatino, serif;
+}
+
+.general-description {
+  font: 12pt "Times New Roman", Palatino, serif;
 }
 
 .body {
