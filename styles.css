@@ -2,8 +2,9 @@
   --page-bg: #000000;
   --paper: #ffffff;
   --ink: #111;
-  --muted: #e01f1f;
+  --muted: #c01818;
   --border: #024eff;
+  --soft-border: #d7d7d7;
 }
 
 * {
@@ -12,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: "Times New Roman", "Arial Narrow";
+  font-family: "Times New Roman", serif;
   color: var(--ink);
   background: var(--page-bg);
 }
@@ -25,45 +26,59 @@ body {
 }
 
 .sheet {
-  width: min(720px, 100%);
+  width: 340px;
   background: var(--paper);
-  padding: 28px 28px 32px;
   border: 1px solid #e6e6e6;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 18px;
 }
 
 .title {
-  margin: 0 0 18px;
-  font-size: 40px;
+  margin: 0 0 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  font-size: 32px;
   font-weight: 700;
-  letter-spacing: 0.2px;
+  text-align: center;
+}
+.sheet {
+  width: 356px;
+  background: var(--paper);
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 18px;
 }
 
 .photo {
-  margin: 0 0 18px;
-  border: 1px solid #e1e1e1;
+  margin: 0 0 14px;
+  border: 1px solid var(--border);
   padding: 10px;
   background: #fff;
 }
 
 .photo img {
   display: block;
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
 .content {
   border: 1px solid var(--border);
-  padding: 18px 18px 16px;
+  padding: 14px;
 }
 
 .lead {
   margin: 0 0 14px;
-  padding: 10px 12px;
-  border: 1px solid #d7d7d7;
-  background: #fafafa;
+  padding: 12px;
+  border: 1px solid var(--soft-border);
+  background: #fbfbfb;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.lead em {
   color: var(--muted);
-  line-height: 1.35;
+  font-style: italic;
 }
 
 .facts {
@@ -73,9 +88,14 @@ body {
 
 .facts .row {
   display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 8px;
-  margin: 4px 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #e6e6e6;
+}
+
+.facts .row:last-child {
+  border-bottom: none;
 }
 
 .facts dt {
@@ -84,22 +104,11 @@ body {
 
 .facts dd {
   margin: 0;
+  text-align: right;
 }
 
 .body {
   margin: 0;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
-@media (max-width: 480px) {
-  .sheet {
-    padding: 20px;
-  }
-  .title {
-    font-size: 32px;
-  }
-  .facts .row {
-    grid-template-columns: 1fr;
-    gap: 2px;
-  }
-}
