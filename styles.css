@@ -24,15 +24,6 @@ body {
   place-items: start center;
   padding: 40px 16px;
 }
-
-.sheet {
-  width: 340px;
-  background: var(--paper);
-  border: 1px solid #e6e6e6;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-  padding: 18px;
-}
-
 .title {
   margin: 0 0 14px;
   padding: 10px 12px;
@@ -111,4 +102,5 @@ body {
   margin: 0;
   line-height: 1.6;
 }
+
 
